@@ -1,3 +1,3 @@
 <x-guest-layout>
-    <h1>test</h1>
+    test
 </x-guest-layout>
