@@ -59,6 +59,6 @@ body {
 }
 
 .fullwidth-btn{
-    @apply bg-gray-800 text-white px-6 py-4 rounded
+    @apply bg-gray-800 text-white px-6 py-2 rounded w-full inline-block text-center
 
 }

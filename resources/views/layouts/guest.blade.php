@@ -14,7 +14,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body>
-<div class="font-sans text-gray-900 antialiased">
+<div class="font-sans text-gray-900 bg-gray-150 antialiased min-h-screen">
     @include('components.header')
     {{ $slot }}
     @include('components.footer')

@@ -1,17 +1,40 @@
 <div class="container pt-4">
-    <h2 class="section-heading">Articles & Advice</h2>
-    <div class="flex-mx-4">
+    <h2 class="section-heading"> Articles & Advices</h2>
+    <div class="flex -mx-4">
         <div class="flex-1 px-4">
-            <div class="bg-white rounded-2xl">
-                <div class="bg-gray-500 w-64">
-                    <div class="w-full">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, temporibus.</h3>
-                        <a href="" class="fullwidth-btn">Read More </a>
-                    </div>
+            <div class="bg-white rounded-xl flex">
+                <div style="min-width: 130px" class="bg-gray-500 w-64"></div>
+                <div class="p-4">
+                    <h3 class="mb-4 text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                    <a href="" class="fullwidth-btn">Read More</a>
                 </div>
             </div>
-
+        </div>
+        <div class="flex-1 px-4">
+            <div class="bg-white rounded-xl flex">
+                <div style="min-width: 130px" class="bg-gray-500 w-64"></div>
+                <div class="p-4">
+                    <h3 class="mb-4 text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                    <a href="" class="fullwidth-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 px-4">
+            <div class="bg-white rounded-xl flex">
+                <div style="min-width: 130px" class="bg-gray-500 w-64"></div>
+                <div class="p-4">
+                    <h3 class="mb-4 text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                    <a href="" class="fullwidth-btn">Read More</a>
+                </div>
+            </div>
         </div>
     </div>
+
+
+
+
+
+
+
 
 </div>
