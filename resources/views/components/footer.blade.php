@@ -31,6 +31,7 @@
             </div>
         </div>
     </div>
+
     <div class="pt-20 text-lg border-b-2 border ">
         <h2 class="section-heading"> Additional Services</h2>
         <div class="flex -mx-4">
@@ -63,4 +64,43 @@
             </div>
         </div>
     </div>
+
+    <div class="flex pb-12">
+        <div class="w-1/4 pr-6">
+            <img width="100" src="{{asset('img/logo.png')}}" alt="">
+            <p class="text-sm mt-12">lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="w-3/4 font-bold leading-8">
+            <div class="flex -mx-6">
+                <div class="flex-1 px-6">
+                    <ul>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                    </ul>
+                </div>
+                <div class="flex-1 px-6">
+                    <ul>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                    </ul>
+                </div>
+                <div class="flex-1 px-6">
+                    <ul>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                        <li><a href="">lorem ipsum dolor sit amet </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+<img class="w-full" src="{{asset('img/panaroma_img.jpg')}}" alt="">
