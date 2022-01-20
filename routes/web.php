@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PropertyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*Home Routes*/
+Route::get('/', [HomeController::class,'home'] )->name('home');
+
+/*Property Listing Route*/
+Route::get('/property/{id}', [PropertyController::class, 'single'])->name('single-property');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

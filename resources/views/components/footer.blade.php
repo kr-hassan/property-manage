@@ -103,4 +103,4 @@
 
 </div>
 
-<img class="w-full" src="{{asset('img/panaroma_img.jpg')}}" alt="">
+<img class="w-full" src="{{asset('img/panaroma_img.png')}}" alt="">

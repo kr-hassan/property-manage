@@ -22,9 +22,9 @@
     <div class="container pt-14">
         <h2 class="section-heading">Best properties</h2>
         <div class="flex flex-wrap -mx-3 mt-10">
-{{--            @foreach($latest_properties as $property)--}}
-{{--                @include('components.single-property-card', ['property' => $property, 'width' => 'md:w-1/4 w-full'])--}}
-{{--            @endforeach--}}
+            @foreach($latest_properties as $property)
+                @include('components.single-property-card', ['property' => $property, 'width' => 'md:w-1/4 w-full'])
+            @endforeach
         </div>
     </div>
 
