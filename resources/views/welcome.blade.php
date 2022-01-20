@@ -75,8 +75,6 @@
     </div>
 
 
-
-
     <div class="container text-center pt-14">
         <h2 class="section-heading">More information about us</h2>
         <div class="relative mt-10 mb-14 bg-cover rounded-xl py-24 bg-center"
