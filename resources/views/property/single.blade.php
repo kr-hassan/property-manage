@@ -14,7 +14,7 @@
     <div class="bg-white py-8">
         <div class="container mx-auto">
             <h2 class="text-3xl text-gray-600">{{$property->name}}</h2>
-            <h3 class="text-lg mt-2">Price: <span class="text-red-800">{{$property->dynamic_pricing($property->price)}}</span></h3>
+            <h3 class="text-lg mt-2">Price: <span class="text-red-800">{{$property->price}}</span></h3>
         </div>
     </div>
 
@@ -43,7 +43,7 @@
                 <div class="md:flex justify-between items-center bg-white p-4 md:p-8 mt-10 shadow-sm">
                     <h4 class="text-lg md:w-2/12 mb-3 md:mb-0">Overview</h4>
                     <div class="md:border-l-2 md:border-gray-300 md:pl-5 md:ml-5 md:w-10/12 text-base">
-                        <p>{{$property->overview}}</p>
+                        <p>{{$property->overview?? ''}}</p>
                     </div>
                 </div>
 
@@ -70,7 +70,7 @@
                                 <li class="flex text-sm">
                                     <div class="flex"><span
                                             class="text-sm">Bedrooms:</span></div>
-                                    <span class="ml-2 font-bold">{{$property->bedrooms}}</span>
+                                    <span class="ml-2 font-bold">{{$property->bedrooms??''}}</span>
                                 </li>
                             </ul>
                         </div>
@@ -79,12 +79,12 @@
                                 <li class="flex text-sm mb-2 mr-4 md:mr-0">
                                     <div class="flex"><span
                                             class="text-sm">Bathrooms:</span></div>
-                                    <span class="ml-2 font-bold">{{$property->bathrooms}}</span>
+                                    <span class="ml-2 font-bold">{{$property->bathrooms??''}}</span>
                                 </li>
                                 <li class="flex text-sm">
                                     <div class="flex"><span
                                             class="text-sm">Location:</span></div>
-                                    <span class="ml-2 font-bold">{{$property->location->name}}</span>
+                                    <span class="ml-2 font-bold">{{$property->location->name??''}}</span>
                                 </li>
                             </ul>
                         </div>
@@ -119,7 +119,7 @@
                 <div class="md:flex md:justify-between items-center bg-white p-4 md:p-8 mt-10 shadow-sm">
                     <h4 class="text-lg md:w-2/12 mb-3 md:mb-0">Why buy this Property</h4>
                     <div class="md:border-l-2 md:border-gray-300 md:pl-5 md:ml-5 md:w-10/12 text-base">
-                        {{$property->why_buy}}
+                        {{$property->why_buy??''}}
                     </div>
                 </div>
 
@@ -128,7 +128,7 @@
 
                     <h2 class="font-bold mb-5 text-xl md:text-2xl"> FACILITIES &amp; LOCATION</h2>
 
-                    {{$property->description}}
+                    {{$property->description??''}}
 
                 </div>
 
@@ -146,7 +146,8 @@
                         <p class="mb-6 p-3 bg-green-100 text-green-700">{{Session::get('message')}}</p>
                     @endif
 
-                    <form action="{{route('property-inquiry', $property->id)}}" method="POST" enctype="multipart/form-data">
+{{--                    <form action="{{route('property-inquiry', $property->id)}}" method="POST" enctype="multipart/form-data">--}}
+                    <form action="#" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <div class="">

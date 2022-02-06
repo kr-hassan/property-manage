@@ -1,5 +1,5 @@
-{{--<form action="{{route('properties')}}" method="GET" class="md:flex justify-between">--}}
-<form action="#" method="GET" class="md:flex justify-between">
+<form action="{{route('properties')}}" method="GET" class="md:flex justify-between">
+{{--<form action="#" method="GET" class="md:flex justify-between">--}}
     <div class="md:flex md:w-9/12 justify-between items-center">
         <div class="flex flex-col md:mx-3">
             <label for="sale">Buy or Rent</label>
@@ -24,18 +24,18 @@
         <div class="py-3 self-center border-gray-500 border hidden md:block"></div>
         <div class="flex flex-col md:mx-3">
             <label for="type">Type</label>
-            {{--            <select id="type" name="type" class="border-gray-400 mb-3 md:mb-0 md:border-0 focus:ring-0">--}}
-            {{--                <option value="">Type</option>--}}
-            {{--                <option {{request('type') == '0' ? 'selected="selected"' : ''}} value="0">Land</option>--}}
-            {{--                <option {{request('type') == '1' ? 'selected="selected"' : ''}} value="1">Apartment</option>--}}
-            {{--                <option {{request('type') == '2' ? 'selected="selected"' : ''}} value="2">Villa</option>--}}
-            {{--            </select>--}}
-            <select id="type" name="type" class="border-gray-400 mb-3 md:mb-0 md:border-0 focus:ring-0">
-                <option value="">Type</option>
-                <option value="0">Land</option>
-                <option value="1">Apartment</option>
-                <option value="2">Villa</option>
-            </select>
+                        <select id="type" name="type" class="border-gray-400 mb-3 md:mb-0 md:border-0 focus:ring-0">
+                            <option value="">Type</option>
+                            <option {{request('type') == '0' ? 'selected="selected"' : ''}} value="0">Land</option>
+                            <option {{request('type') == '1' ? 'selected="selected"' : ''}} value="1">Apartment</option>
+                            <option {{request('type') == '2' ? 'selected="selected"' : ''}} value="2">Villa</option>
+                        </select>
+{{--            <select id="type" name="type" class="border-gray-400 mb-3 md:mb-0 md:border-0 focus:ring-0">--}}
+{{--                <option value="">Type</option>--}}
+{{--                <option value="0">Land</option>--}}
+{{--                <option value="1">Apartment</option>--}}
+{{--                <option value="2">Villa</option>--}}
+{{--            </select>--}}
         </div>
         <div class="py-3 self-center border-gray-500 border hidden md:block"></div>
         <div class="flex flex-col md:mx-3">

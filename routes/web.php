@@ -20,6 +20,7 @@ Route::get('/', [HomeController::class,'home'] )->name('home');
 
 /*Property Listing Route*/
 Route::get('/property/{id}', [PropertyController::class, 'single'])->name('single-property');
+Route::get('/property', [PropertyController::class, 'index'])->name('properties');
 
 
 
